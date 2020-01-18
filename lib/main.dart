@@ -1,3 +1,5 @@
+import './screens/mealDetailScreen.dart';
+
 import './screens/categoryMealsScreen.dart';
 
 import './screens/categoriesScreen.dart';
@@ -33,6 +35,7 @@ class MyApp extends StatelessWidget {
       routes: {
         '/': (ctx) => CategoriesScreen(),
         CategoryMealsScreen.routeName: (ctx) => CategoryMealsScreen(),
+        MealDetailsScreen.routeName: (ctx) => MealDetailsScreen(),
       },
     );
   }
