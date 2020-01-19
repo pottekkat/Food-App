@@ -40,7 +40,7 @@ class MealDetailsScreen extends StatelessWidget {
         title: Text('${selectedMeal.title}'),
       ),
       body: SingleChildScrollView(
-              child: Column(
+        child: Column(
           children: <Widget>[
             Container(
               height: 300,
@@ -68,7 +68,7 @@ class MealDetailsScreen extends StatelessWidget {
             ),
             buildSectionTitle(context, 'Steps'),
             buildContainer(ListView.builder(
-              itemBuilder: (ctx,index)=> Column(
+              itemBuilder: (ctx, index) => Column(
                 children: <Widget>[
                   ListTile(
                     leading: CircleAvatar(
@@ -83,6 +83,12 @@ class MealDetailsScreen extends StatelessWidget {
             ))
           ],
         ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        child: Icon(Icons.delete),
+        onPressed: () {
+          Navigator.of(context).pop(mealId);
+        },
       ),
     );
   }
