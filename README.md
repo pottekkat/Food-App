@@ -5,3 +5,5 @@ This is an app developed using Flutter that provides a template for a recipie/ m
 Feel free to use the code and you can reach out for any help!
 
 Cheers!
+
+
